@@ -37,9 +37,15 @@ const renderOperators = async () => {
     });
   } else {
     const message = document.createElement("h2");
-    message.textContent = "Not valid operator!1";
+    message.textContent = "Not valid operator!";
     mainContent.appendChild(message);
   }
 };
 
-renderOperators();
+const requestedUrl = window.location.href.split("/").pop();
+
+if (requestedUrl) {
+  window.location.href = "../404.html";
+} else {
+  renderOperators();
+}

@@ -18,7 +18,7 @@ const renderOperator = async () => {
     document.title = `Operator - ${operator.name}`;
   } else {
     const message = document.createElement("h2");
-    message.textContent = "Not valid operator!3";
+    message.textContent = "Not valid operator!";
     operatorContent.appendChild(message);
   }
 };
