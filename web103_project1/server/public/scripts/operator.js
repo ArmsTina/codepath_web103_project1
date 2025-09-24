@@ -15,7 +15,7 @@ const renderOperator = async () => {
     document.getElementById("position").textContent =
       "Position: " + operator.position;
     document.getElementById("description").textContent = operator.description;
-    document.title = `UnEarthed - ${operator.name}`;
+    document.title = `Operator - ${operator.name}`;
   } else {
     const message = document.createElement("h2");
     message.textContent = "Not valid operator!3";
